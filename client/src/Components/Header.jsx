@@ -70,10 +70,10 @@ const Header = () => {
     ];
 
     return (
-        <header ref={headerRef} className={`w-full bg-white md:bg-transparent fixed top-0 left-0 right-0 transition-all duration-300 ease-in-out z-50 ${isSticky ? "border-b border-gray-200" : ""}`} style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
-            <nav className="py-4 lg:px-14 px-4">
+        <header ref={headerRef} className={`w-full bg-white md:bg-transparent fixed top-0 left-0 right-0 transition-all duration-300 ease-in-out z-50  ${isSticky ? "border-b border-gray-200" : ""}`} style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
+            <nav className="py-3 lg:px-14 px-4 ">
                 <div className="flex justify-between items-center text-base gap-8">
-                    <Link to="/">
+                    <Link to="/home">
                         <img src={logo} alt="logo" className="h-14 w-42" />
                     </Link>
 
@@ -88,28 +88,33 @@ const Header = () => {
                             <button onClick={toggleMenu} className="focus:outline-none bg-[#39497e] rounded-sm ">
                                 {isMenuOpen ? (<FaTimes className="h-6 w-6 text-neutralDgrey" />) : (<FaBars className="h-6 w-6 text-neutralDgrey" />)}
                             </button>
-                            <div className={`space-y-4 px-4 mt-8 rounded-xl py-7 h-full bg-gray-800 ${isMenuOpen ? "block fixed top-14 right-0" : "hidden"}`} style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
+                            <div className={`space-y-4 px-4 mt-4 rounded-xl py-7 h-full bg-gray-800 ${isMenuOpen ? "block fixed top-14 right-0" : "hidden"}`} style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
                                 {navItems.map(({ link, path }) =>
                                     <ScrollLink key={path} to={path} spy={true} smooth={true} offset={-100} onClick={toggleMenu} className="block text-base text-white hover:text-brandPrimary first:font-medium p-4 rounded-md">{link}</ScrollLink>
                                 )}
                             </div>
                         </div>
 
-                        <button onClick={currentUser ? toggleProfileMenu : () => window.location.href='/signin'}>
+                        <button onClick={currentUser ? toggleProfileMenu : () => window.location.href='/sign-in'}>
                             {currentUser ? (
                                 <img
-                                    src={currentUser.profilePicture}
+                                    src={currentUser.avatar}
                                     alt='profile'
                                     className="w-11 h-10 -mr-2 rounded-full shadow-md border-2 border-white"
                                 />
                             ) : (
                                 <span className="text-white">Sign In</span>
+
                             )}
                         </button>
 
                         {isProfileMenuOpen && currentUser && (
-                            <div className="absolute top-14 right-0 bg-gray-800 rounded-xl py-2 mt-2 shadow-lg" style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
-                                <button onClick={handleSignOut} className="block text-white hover:text-brandPrimary first:font-medium px-4 py-2">Logout</button>
+                            <div className="absolute top-14 right-0 mt-4  rounded-xl py-2  md:mr-8 shadow-lg bg-gray-400 " style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
+                              
+                               {/* button to link to profile */}
+                               <Link to="/profile" className="block text-white hover:text-blue-500 hover:text-brandPrimary first:font-medium px-4 py-2">Profile</Link>
+                            {/* Logout */}
+                              <button onClick={handleSignOut} className="block text-white  hover:text-red-300  first:font-medium px-4 py-2">Logout</button>
                             </div>
                         )}
                     </div>

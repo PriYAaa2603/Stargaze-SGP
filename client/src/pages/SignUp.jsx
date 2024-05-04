@@ -63,7 +63,7 @@ export default function SignOut() {
 
   return (
     <div className='  flex items-center justify-center h-screen' style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-    <div className=' px-10 py-4 w-[550px]   max-w-lg mx-auto rounded-xl  shadow-xl shadow-xl bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 items-center justify-center'>
+    <div className=' px-10 py-4 w-[550px]  mt-10  max-w-lg mx-auto rounded-xl  shadow-xl bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 items-center justify-center'>
       <h1 className='text-[#91a0cf] py-6 text-3xl text-center font-semibold '>Sign up</h1>
 
       <form onSubmit={handleSubmit} className='flex flex-col gap-4'>

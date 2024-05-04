@@ -7,8 +7,7 @@ import { signInStart, signInSuccess, signInFailure } from '../redux/user/userSli
 import { useSelector } from 'react-redux';
 import OAuth from '../Components/OAuth';
 import back11 from '/bg3.jpg'
-/* google icon import */
-import { FcGoogle } from 'react-icons/fc'
+
 
 
 
@@ -54,7 +53,7 @@ export default function SignIn() {
       }
       dispatch(signInSuccess(data))
 
-      Navigate('/')
+      Navigate('/home')
     }
     catch (error) {
       dispatch(signInFailure(error.message))
@@ -64,7 +63,7 @@ export default function SignIn() {
   };
   return (
     <div className='  flex items-center justify-center h-screen' style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className=' p-10  w-[500px]  max-w-lg mx-auto rounded-xl  shadow-xl bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 items-center justify-center'>
+      <div className=' p-10 mt-14  w-[500px]  max-w-lg mx-auto rounded-xl  shadow-xl bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 items-center justify-center'>
         <h1 className=' text-[#91a0cf] text-3xl text-center font-semibold mb-8'>Sign In</h1>
 
         <form onSubmit={handleSubmit} className='flex flex-col gap-4   items-center'>
