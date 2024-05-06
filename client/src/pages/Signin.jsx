@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import { signInStart, signInSuccess, signInFailure } from '../redux/user/userSlice'
 import { useSelector } from 'react-redux';
 import OAuth from '../Components/OAuth';
-import back11 from '/bg3.jpg'
+import back11 from '/blackbg.jpg'
 
 
 
@@ -63,27 +63,30 @@ export default function SignIn() {
   };
   return (
     <div className='  flex items-center justify-center h-screen' style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className=' p-10 mt-14  w-[500px]  max-w-lg mx-auto rounded-xl  shadow-xl bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 items-center justify-center'>
+      <div className=' p-10 mt-14  w-[500px]  max-w-lg mx-auto rounded-xl  shadow-xl  border-2'>
         <h1 className=' text-[#91a0cf] text-3xl text-center font-semibold mb-8'>Sign In</h1>
 
         <form onSubmit={handleSubmit} className='flex flex-col gap-4   items-center'>
 
 
 
-          <input type='email' placeholder='email'
-            className=' bg-slate-200 border p-2 rounded-lg w-full'
+          <input type='email'
+           placeholder='email'
+            className=' border-2  focus:outline-none text-slate-200 p-2 rounded-lg w-full'
             id='email'
-            onChange={handleChange} />
+            onChange={handleChange}
+            style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
 
           <input type='password'
             placeholder='password'
-            className=' bg-slate-200 border p-2 rounded-lg w-full' id='password'
+            className=' border-2  focus:outline-none text-slate-200 p-2 rounded-lg w-full'
+             id='password'
             onChange={handleChange}
-
+            style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'center' }} 
           />
 
           <button disabled={loading} className=
-            'bg-[#273769] mt-4 text-white p-2 rounded-lg w-full uppercase hover:opacity-95 disabled:opacity-80'>
+            'bg-[#070d1f] mt-4 text-white p-2 rounded-lg w-full uppercase hover:opacity-95 disabled:opacity-80'>
             {loading ? 'Loading...' : 'Sign In'}</button>
 
             <span className='text-center text-slate-200'>or</span>

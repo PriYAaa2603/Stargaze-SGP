@@ -3,7 +3,7 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react'
 import OAuth from '../Components/OAuth';
-import back11 from '/bg3.jpg'
+import back11 from '/blackbg.jpg'
 
 
 export default function SignOut() {
@@ -63,29 +63,34 @@ export default function SignOut() {
 
   return (
     <div className='  flex items-center justify-center h-screen' style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-    <div className=' px-10 py-4 w-[550px]  mt-10  max-w-lg mx-auto rounded-xl  shadow-xl bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 items-center justify-center'>
+    <div className=' px-10 py-4 w-[550px]  mt-10  max-w-lg mx-auto rounded-xl  shadow-xl  items-center justify-center border-2'>
       <h1 className='text-[#91a0cf] py-6 text-3xl text-center font-semibold '>Sign up</h1>
 
       <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
         <input type="text" placeholder="username"
-          className='border bg-slate-200 p-2 rounded-lg' id='username'
+          className='border-2  focus:outline-none text-slate-200 p-2 rounded-lg w-full' id='username'
           onChange={handleChange}
+          style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
 
         />
         <input type='email' placeholder='email'
-          className=' border bg-slate-200 p-2 rounded-lg'
+          className=' border-2  focus:outline-none text-slate-200 p-2 rounded-lg w-full'
           id='email'
-          onChange={handleChange} />
+          onChange={handleChange}
+          style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+          
+          />
 
         <input type='password'
           placeholder='password'
-          className='border bg-slate-200 p-2 rounded-lg' id='password'
+          className='border-2  focus:outline-none text-slate-200 p-2 rounded-lg w-full' id='password'
           onChange={handleChange}
+          style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
 
         />
 
         <button disabled={loading} className=
-          'bg-[#273769] text-white p-2 rounded-lg uppercase hover:opacity-95 disabled:opacity-80'>
+          'bg-[#070d1f] text-white p-2 rounded-lg uppercase hover:opacity-95 disabled:opacity-80'>
           {loading ? 'Loading...' : 'Sign Up'}</button>
         <span className='text-center text-slate-200 '>or</span>
         <OAuth />
