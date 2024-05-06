@@ -1,17 +1,29 @@
 import Footer from '../Components/Footer';
+import Asteroids from '../Components/HomeComponents/Asteroids';
 import AstronomyPictureOfDay from '../Components/HomeComponents/AstronomyPictureOfDay';
 import Banner from '../Components/HomeComponents/Banner';
+import ContactUs from '../Components/HomeComponents/ContactUs';
+import EPICImagery from '../Components/HomeComponents/EPICImagery';
 import FeaturedContent from '../Components/HomeComponents/FeaturedContent';
 
-import back11 from '/bg7.jpg'; // Import your background image
+
+import NearEarthObjects from '../Components/HomeComponents/NearEarthObjects';
+
 export default function Home() {
-    const apiKey = '8wam3qZnZsmW0Iw29msGZVSJj8m6HN6rgmIWO8Wq';
+    const apiKey = 'GoVBbaVMS2c1ESnrNk99mugUWO505BMBgVpj6O0q';
+
+   
     return (
-        <div className='mt-20'style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'center' }} >
+        <div >
            <div >
-               <Banner />
+               <Banner className=' '/>
                <FeaturedContent />
                <AstronomyPictureOfDay apiKey={apiKey} />
+               <NearEarthObjects apiKey={apiKey} />
+               <Asteroids apiKey={apiKey} />
+               <EPICImagery apiKey={apiKey} />
+               <ContactUs />
+
             </div>
             {/* Footer */}
             <div className=''>

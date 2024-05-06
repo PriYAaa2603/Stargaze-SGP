@@ -17,7 +17,7 @@ import {
 
 } from '../redux/user/userSlice';
 import { useDispatch } from 'react-redux';
-import back11 from '/bg3.jpg';
+import back11 from '/blackbg.jpg';
 import cardBack from '/blogo2.png';
 
 
@@ -121,7 +121,7 @@ export default function Profile() {
 
   return (
     <div className='min-h-screen  flex justify-center items-center 'style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className='p-6   mt-16 w-full max-w-[500px] mx-auto rounded-xl shadow-xl shadow-xl bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
+      <div className='p-6   mt-16 w-full max-w-[500px] mx-auto rounded-xl shadow-xl   border-2'>
         <h1 className='text-3xl font-semibold text-center my-2 text-white'>Profile</h1>
   
         <form onSubmit={handleSubmit} className='flex flex-col gap-4 px-10'>
@@ -156,21 +156,23 @@ export default function Profile() {
             placeholder='username'
             defaultValue={currentUser.username}
             id='username'
-            className='border p-2 rounded-lg focus:outline-none bg-[#7291d1]'
+            className=' p-2 rounded-lg focus:outline-none text-slate-200  border-2'
             onChange={handleChange}
+            style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
           />
           <input
             type='email'
             placeholder='email'
             id='email'
             defaultValue={currentUser.email}
-            className='border p-2 rounded-lg  focus:outline-none bg-[#7291d1]'
+            className=' p-2 rounded-lg focus:outline-none text-slate-200  border-2'
             onChange={handleChange}
+            style={{ backgroundImage: `url(${back11})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
           />
           
           <button
             disabled={loading}
-            className='bg-[#1a3463] text-lg hover:bg-[#18346e] text-[#dee2f0] rounded-lg p-2 uppercase hover:opacity-95 disabled:opacity-80'
+            className='bg-[#154194] text-lg hover:bg-[#18346e] text-[#dee2f0] rounded-lg p-2 uppercase hover:opacity-95 disabled:opacity-80'
           >
             {loading ? 'Loading...' : 'Update'}
           </button>
