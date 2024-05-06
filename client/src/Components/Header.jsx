@@ -1,9 +1,10 @@
-import React, { useEffect, useState, useRef } from "react";
+/* eslint-disable no-undef */
+import  { useEffect, useState, useRef } from "react";
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
 import logo from "/logo.png";
-import back11 from "/blogo2.png";
+import back11 from "/blackbg.png";
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { deleteUserFailure, deleteUserSuccess, signOutUserStart } from '../redux/user/userSlice';
@@ -62,11 +63,11 @@ const Header = () => {
 
     const navItems = [
         { link: "Home", path: "home" },
-        { link: "Service", path: "service" },
-        { link: "About", path: "about" },
-        { link: "Product", path: "product" },
-        { link: "Testimonial", path: "testimonial" },
-        { link: "FAQ", path: "faq" },
+        { link: "Featured", path: "featured" },
+        { link: "Astronomy", path: "astronomy" },
+        { link: "Objects", path: "objects" },
+        { link: "EPIC", path: "epic" },
+        
     ];
 
     return (

@@ -42,7 +42,7 @@ export default function OAuth() {
     };
 
     return (
-        <button onClick={handleGoogleClick} type='button' className='bg-[#385683] text-white p-1 text-sm  w-full rounded-lg uppercase hover:opacity-95'>
+        <button onClick={handleGoogleClick} type='button' className='bg-[#0f1c41] text-white p-1 text-sm  w-full rounded-lg uppercase hover:opacity-95'>
            <FcGoogle className='    mr-3 inline-block' size={30} />
             Continue with Google
         </button>

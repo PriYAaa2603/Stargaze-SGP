@@ -23,4 +23,9 @@ body{
   .animate-bounce-slow {
     animation: bounce 2s ease-in-out infinite;
   }
+
+
+  .neo-card-container {
+    margin-right: 10px; /* Adjust as needed */
+  }
   
