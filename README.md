@@ -2,6 +2,12 @@
 ## StarGaze
 
 ![logo](https://github.com/sliitcsse/se3040-assignment02-SarangaSiriwardhana9/assets/99233703/29c6bc8e-95a1-4b09-973b-a043c86dfb9c)
+| Screenshot | Screenshot |
+|------------|------------|
+| ![Screenshot 2024-05-16 214735](https://github.com/SarangaSiriwardhana9/StarGraze/assets/99233703/7e09c768-661f-4395-829c-2d95abe90f5c) | ![Screenshot 2024-05-16 214809](https://github.com/SarangaSiriwardhana9/StarGraze/assets/99233703/d24635b2-26cb-4640-bf54-a75d76bf7732) |
+| ![Screenshot 2024-05-16 214851](https://github.com/SarangaSiriwardhana9/StarGraze/assets/99233703/daa4362e-f5fc-4291-87a3-dd9e5d8bff5e) | ![Screenshot 2024-05-16 214910](https://github.com/SarangaSiriwardhana9/StarGraze/assets/99233703/ffc0e716-95ca-4fbb-8004-9d4c56bfee0f) |
+| ![Screenshot 2024-05-16 214933](https://github.com/SarangaSiriwardhana9/StarGraze/assets/99233703/3499c0f2-50fe-4704-b9bb-12583ef1f8a4) | ![Screenshot 2024-05-16 214959](https://github.com/SarangaSiriwardhana9/StarGraze/assets/99233703/b5de2f2b-b405-4dba-89a5-2583bc50d072) |
+| ![Screenshot 2024-05-16 215022](https://github.com/SarangaSiriwardhana9/StarGraze/assets/99233703/6dda1623-1d4c-49be-a6a3-4e80040a7058) |              |
 
 
 StarGaze is a web application that allows users to explore astronomy-related data and imagery. The application utilizes several NASA APIs to provide a rich and informative experience for users interested in space and celestial objects.
@@ -68,3 +74,15 @@ StarGaze is a web application that allows users to explore astronomy-related dat
 
 # Demo Site 
 [Use this Link](https://stargraze-deploy.onrender.com)
+
+
+![Screenshot 2024-05-16 214735](https://github.com/SarangaSiriwardhana9/StarGraze/assets/99233703/7e09c768-661f-4395-829c-2d95abe90f5c)
+![Screenshot 2024-05-16 214809](https://github.com/SarangaSiriwardhana9/StarGraze/assets/99233703/d24635b2-26cb-4640-bf54-a75d76bf7732)
+![Screenshot 2024-05-16 214851](https://github.com/SarangaSiriwardhana9/StarGraze/assets/99233703/daa4362e-f5fc-4291-87a3-dd9e5d8bff5e)
+![Screenshot 2024-05-16 214910](https://github.com/SarangaSiriwardhana9/StarGraze/assets/99233703/ffc0e716-95ca-4fbb-8004-9d4c56bfee0f)
+![Screenshot 2024-05-16 214933](https://github.com/SarangaSiriwardhana9/StarGraze/assets/99233703/3499c0f2-50fe-4704-b9bb-12583ef1f8a4)
+![Screenshot 2024-05-16 214959](https://github.com/SarangaSiriwardhana9/StarGraze/assets/99233703/b5de2f2b-b405-4dba-89a5-2583bc50d072)
+![Screenshot 2024-05-16 215022](https://github.com/SarangaSiriwardhana9/StarGraze/assets/99233703/6dda1623-1d4c-49be-a6a3-4e80040a7058)
+
+
+
