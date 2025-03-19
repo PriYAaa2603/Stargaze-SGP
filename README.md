@@ -53,7 +53,7 @@ StarGaze is a web application that allows users to explore astronomy-related dat
  ```bash
  https://www.mongodb.com/cloud/atlas/register
  ```
-4.Create a .env file in the server folder and add your NASA API & Firebase config
+5.Create a .env file in the server folder and add your NASA API & Firebase config
 
  ```bash
  REACT_APP_NASA_API=your_nasa_api_key
@@ -62,7 +62,7 @@ StarGaze is a web application that allows users to explore astronomy-related dat
  FIREBASE_PROJECT_ID=your_firebase_project_id
  MONGO=your mongodb cluster link
  ```
-5.Start the frontend and backend servers:
+6.Start the frontend and backend servers:
 
 ```bash
  cd client
@@ -71,7 +71,7 @@ StarGaze is a web application that allows users to explore astronomy-related dat
  cd ../server
  npm start
 ```
-6.Access the application at http://localhost:3000.
+7.Access the application at http://localhost:3000.
 
 
 # Demo Site 
