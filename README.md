@@ -33,7 +33,7 @@ StarGaze is a web application that allows users to explore astronomy-related dat
 1. Clone the repository:
 
    ```bash
-   https://github.com/sliitcsse/se3040-assignment02-SarangaSiriwardhana9.git
+   git clone https://github.com/PriYAaa2603/Stargaze-SGP.git 
    ```
 
 2.Install dependencies:
@@ -46,25 +46,31 @@ StarGaze is a web application that allows users to explore astronomy-related dat
     npm install
   ```
 
-3.Set up environment variables:
+3.Generate API key from Official NASA API Website:
 
    ```bash
-
-    REACT_APP_NASA_API=your_nasa_api_key
+   https://api.nasa.gov/
  ```
-4.Create a .env file in the server folder and add your Firebase config
+4.Set up your mongodb cluster:
+
+   ```bash
+   https://www.mongodb.com/cloud/atlas/register
+ ```
+4.Create a .env file in the server folder and add your NASA API & Firebase config
 
   ```bash
+    REACT_APP_NASA_API=your_nasa_api_key
     FIREBASE_API_KEY=your_firebase_api_key
     FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
     FIREBASE_PROJECT_ID=your_firebase_project_id
+    MONGO=your mongodb cluster link
   ```
 5.Start the frontend and backend servers:
 
    ```bash
     
     cd client
-    npm start
+    npm run dev
 
     cd ../server
     npm start
