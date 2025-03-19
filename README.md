@@ -27,55 +27,53 @@ StarGaze is a web application that allows users to explore astronomy-related dat
 
 ## Installation
 
-1. Clone the repository:
+1.Clone the repository:
 
-   ```bash
-    git clone https://github.com/PriYAaa2603/Stargaze-SGP.git 
-   ```
+ ```bash
+ git clone https://github.com/PriYAaa2603/Stargaze-SGP.git 
+ ```
 
 2.Install dependencies:
 
-  ```bash
-    cd StarGaze/client
-    npm install
+ ```bash
+ cd StarGaze/client
+ npm install
 
-    cd ../server
-    npm install
-  ```
+ cd ../server
+ npm install
+ ```
 
 3.Generate API key from Official NASA API Website:
 
-   ```bash
-   https://api.nasa.gov/
+ ```bash
+ https://api.nasa.gov/
  ```
 4.Set up your mongodb cluster:
 
-   ```bash
-   https://www.mongodb.com/cloud/atlas/register
+ ```bash
+ https://www.mongodb.com/cloud/atlas/register
  ```
 4.Create a .env file in the server folder and add your NASA API & Firebase config
 
-  ```bash
-    REACT_APP_NASA_API=your_nasa_api_key
-    FIREBASE_API_KEY=your_firebase_api_key
-    FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
-    FIREBASE_PROJECT_ID=your_firebase_project_id
-    MONGO=your mongodb cluster link
-  ```
+ ```bash
+ REACT_APP_NASA_API=your_nasa_api_key
+ FIREBASE_API_KEY=your_firebase_api_key
+ FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+ FIREBASE_PROJECT_ID=your_firebase_project_id
+ MONGO=your mongodb cluster link
+ ```
 5.Start the frontend and backend servers:
 
-   ```bash
-    cd client
-    npm run dev
+```bash
+ cd client
+ npm run dev
 
-    cd ../server
-    npm start
-   ```
+ cd ../server
+ npm start
+```
 6.Access the application at http://localhost:3000.
 
 
 # Demo Site 
 [Use this Link](https://stargraze-deploy.onrender.com)
-=======
-# Space_info_SGP
->>>>>>> bf7aabcebac0e55f4fa65a4b61968f5a796cd2b1
+
