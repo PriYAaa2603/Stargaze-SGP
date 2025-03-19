@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 ## StarGaze
 
@@ -74,3 +75,6 @@ StarGaze is a web application that allows users to explore astronomy-related dat
 
 # Demo Site 
 [Use this Link](https://stargraze-deploy.onrender.com)
+=======
+# Space_info_SGP
+>>>>>>> bf7aabcebac0e55f4fa65a4b61968f5a796cd2b1
