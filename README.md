@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-
 ## StarGaze
 
-![logo](https://github.com/sliitcsse/se3040-assignment02-SarangaSiriwardhana9/assets/99233703/29c6bc8e-95a1-4b09-973b-a043c86dfb9c)
 | Screenshot | Screenshot |
 |------------|------------|
 | ![Screenshot 2024-05-16 214735](https://github.com/SarangaSiriwardhana9/StarGraze/assets/99233703/7e09c768-661f-4395-829c-2d95abe90f5c) | ![Screenshot 2024-05-16 214809](https://github.com/SarangaSiriwardhana9/StarGraze/assets/99233703/d24635b2-26cb-4640-bf54-a75d76bf7732) |
@@ -33,7 +30,7 @@ StarGaze is a web application that allows users to explore astronomy-related dat
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/PriYAaa2603/Stargaze-SGP.git 
+    git clone https://github.com/PriYAaa2603/Stargaze-SGP.git 
    ```
 
 2.Install dependencies:
@@ -68,13 +65,11 @@ StarGaze is a web application that allows users to explore astronomy-related dat
 5.Start the frontend and backend servers:
 
    ```bash
-    
     cd client
     npm run dev
 
     cd ../server
     npm start
-
    ```
 6.Access the application at http://localhost:3000.
 
