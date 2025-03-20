@@ -10,9 +10,8 @@ const ContactUs = () => {
                 <div className=" border-2 rounded-lg shadow-md p-8 flex flex-col">
                     <h2 className="text-3xl font-semibold text-center text-[#7195cc] mb-6">Contact Information</h2>
                     <div className="flex-grow">
-                        <p className="text-gray-100 text-lg  mb-2">Address: 65 Main Street, Wadduwa, Sri Lanka</p>
-                        <p className="text-gray-100 mb-2">Phone: +94 11 234 5678</p>
-                        <p className="text-gray-100 mb-2">Email: info@serenalankatravels.com</p>
+                        <p className="text-gray-100 mb-2">Phone: +91 9104426305</p>
+                        <p className="text-gray-100 mb-2">Email: priyavagh005@gmail.com</p>
                     </div>
                     <div className="flex justify-center  mb-10">
                         <img src={contact} alt="Contact" className="w-64 h-48" />
